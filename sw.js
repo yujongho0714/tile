@@ -1,6 +1,6 @@
 /* 태권도 타일 게임 오프라인 — 한 번 열면 저장돼서 인터넷 없이도 열려요.
    타일 게임 파일을 고쳐서 다시 올릴 때는 아래 VERSION 숫자를 하나 올려주세요. */
-const VERSION = 'tile-v1';
+const VERSION = 'tile-v2';
 const CACHE = 'jd-tile-' + VERSION;
 const FONT = ['fonts.googleapis.com', 'fonts.gstatic.com'];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.add('./').catch(() => {}))); });
